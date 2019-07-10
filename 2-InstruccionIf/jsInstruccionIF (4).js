@@ -2,10 +2,11 @@ function mostrar()
 {
 //tomo la edad  
 var edad;
-
-edad = document.getElementById("edad").Value;
+//fijarme que el .value no este ne mayuscula 
+edad = document.getElementById("edad").value;
+edad = parseInt(edad);
 //no importa el valor que ponga, salta la alerta 
-if(edad >= 13 <= 17)
+if(edad >= 13 && edad <= 17)
 {
     alert("Sos un adolescente");
 }
