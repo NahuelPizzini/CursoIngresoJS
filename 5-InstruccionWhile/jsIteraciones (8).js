@@ -1,11 +1,20 @@
 function mostrar()
 {
 
-	var contador=0;
+	var contadornegativo =0;
 	var positivo=0;
 	var negativo=1;
+	var numero;
+	var seguir
 	
-	var respuesta='si';
+	do 
+	{
+		numero = parseInt(prompt("ingrese un numero"));
+		acumulador = acumulador + numero;
+		seguir = prompt("¿quiere ingresar otro numero?");
+
+	}
+	while (seguir == si);
 
 
 document.getElementById('suma').value=positivo;
